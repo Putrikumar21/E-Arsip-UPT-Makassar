@@ -1,0 +1,102 @@
+/* Header Profile Styling */
+.header-profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    background: #ffffff;
+    padding: 12px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    color: #333333 !important;
+    cursor: pointer;
+}
+
+.profile-info:hover {
+    background: #f8fafc;
+}
+
+.avatar-circle {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--pln-blue), var(--pln-cyan));
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 3px 8px rgba(0, 70, 133, 0.2);
+    flex-shrink: 0;
+}
+
+.user-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Dropdown Customization */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 8px;
+    margin-top: 10px !important;
+    min-width: 180px;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item i {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.dropdown-item:hover {
+    background: #f0f7ff;
+    color: var(--pln-blue);
+}
+
+/* KHUSUS TOMBOL LOGOUT (SIDEBAR & DROPDOWN) */
+/* Efek saat diarahkan (Hover) - Menjadi Merah */
+.nav-link.text-danger:hover, 
+.dropdown-item.text-danger:hover {
+    background: #dc3545 !important; /* Warna Merah Danger */
+    color: #ffffff !important;
+    transform: translateX(5px); /* Efek geser interaktif */
+}
+
+/* Efek saat diklik (Active) */
+.nav-link.text-danger:active, 
+.dropdown-item.text-danger:active {
+    background: #a71d2a !important; /* Merah gelap saat ditekan */
+    color: #ffffff !important;
+    transform: translateX(2px); /* Sedikit membal saat ditekan */
+}
+
+/* Memastikan ikon ikut berwarna putih saat hover logout */
+.nav-link.text-danger:hover i,
+.dropdown-item.text-danger:hover i {
+    color: #ffffff !important;
+    opacity: 1;
+}
